@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>inPulse Club | HIIT &amp; Fitness Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#0e0e0e",
+              "on-primary": "#536000",
+              "error-container": "#b92902",
+              "secondary-dim": "#eb7f79",
+              "surface-bright": "#2c2c2c",
+              "on-primary-fixed": "#3f4900",
+              "secondary-fixed": "#ffc3bf",
+              "on-primary-container": "#3b4500",
+              "on-tertiary": "#605f58",
+              "primary-container": "#b8d304",
+              "secondary-container": "#7d2b29",
+              "error": "#ff7351",
+              "primary": "#e1fe42",
+              "on-secondary-container": "#ffc1bd",
+              "on-primary-fixed-variant": "#596700",
+              "tertiary-fixed-dim": "#f1eee4",
+              "on-secondary-fixed": "#641819",
+              "on-surface-variant": "#adaaaa",
+              "inverse-primary": "#576500",
+              "on-error-container": "#ffd2c8",
+              "surface-container-lowest": "#000000",
+              "on-secondary-fixed-variant": "#8a3432",
+              "primary-fixed-dim": "#ceea2c",
+              "tertiary": "#fcf9ef",
+              "surface-container-low": "#131313",
+              "on-error": "#450900",
+              "primary-fixed": "#dcf93c",
+              "secondary": "#fb8b86",
+              "on-tertiary-fixed": "#4f4f48",
+              "surface": "#0e0e0e",
+              "surface-variant": "#262626",
+              "surface-tint": "#e1fe42",
+              "tertiary-container": "#eeebe1",
+              "on-tertiary-container": "#585750",
+              "error-dim": "#d53d18",
+              "background": "#0e0e0e",
+              "inverse-surface": "#fcf9f8",
+              "on-surface": "#ffffff",
+              "surface-container-high": "#1f2020",
+              "surface-container-highest": "#262626",
+              "on-background": "#ffffff",
+              "on-tertiary-fixed-variant": "#6d6c64",
+              "primary-dim": "#d3f033",
+              "tertiary-dim": "#eeebe1",
+              "secondary-fixed-dim": "#ffafaa",
+              "outline": "#767575",
+              "inverse-on-surface": "#565555",
+              "surface-container": "#191a1a",
+              "tertiary-fixed": "#feffd5",
+              "outline-variant": "#484848",
+              "on-secondary": "#591012"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .kinetic-marquee {
+        white-space: nowrap;
+        animation: marquee 30s linear infinite;
+      }
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .brutal-shadow {
+        box-shadow: 20px 20px 0px 0px #e1fe42;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- Shared Component: TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl bg-surface/60 flex justify-between items-center px-8 py-6 w-full">
+<div class="text-3xl font-black tracking-tighter text-tertiary italic">inPulse Club</div>
+<div class="hidden md:flex gap-12">
+<a class="font-['Plus_Jakarta_Sans'] font-bold tracking-tighter uppercase text-tertiary hover:text-lime-400 transition-colors hover:scale-105 transition-transform duration-200" href="#">COURS</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold tracking-tighter uppercase text-tertiary hover:text-lime-400 transition-colors hover:scale-105 transition-transform duration-200" href="#">COACHS</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold tracking-tighter uppercase text-tertiary hover:text-lime-400 transition-colors hover:scale-105 transition-transform duration-200" href="#">PLANNING</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold tracking-tighter uppercase text-tertiary hover:text-lime-400 transition-colors hover:scale-105 transition-transform duration-200" href="#">TARIFS</a>
+</div>
+<button class="bg-primary text-on-primary font-bold px-8 py-3 rounded-full hover:scale-105 transition-all active:scale-95 duration-150 uppercase tracking-tighter">REJOINDRE</button>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Fitness Motivation" class="w-full h-full object-cover brightness-[0.3]" data-alt="Moody dark fitness studio interior with high contrast shadows and modern equipment under dramatic spotlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsTA8fXdSMLu4GpDdn9eYonglz31qjH8dAADgBHfxAOM7a7aGk722XdLvDYnOriZUHMesqoWibp7psj-KRwe7FebuBI89vmvrVLD_I2DAXB5baCmwdnjeHdXUj3rwmBVDYft4R9CWF6dqol3Kd_UnjGfZvsc_lKakmL7myRkTRaCQysRt8xVw0d19tQ9WgNYRxqD3xT2dUF8bwMbBFHQGlP9J5J1TzLHCw89bHazv0bqY9navKP_fvcMMkrxOJSKYAzbpM1LiEOQ"/>
+</div>
+<div class="relative z-10 text-center px-4">
+<h1 class="font-headline font-black text-6xl md:text-9xl text-primary tracking-tighter leading-none mb-4 italic uppercase">
+                STRONGER<br/>TOGETHER
+            </h1>
+<p class="font-headline font-bold text-tertiary text-xl md:text-2xl tracking-widest uppercase">Poussez vos limites au cœur du 17ème</p>
+</div>
+<div class="absolute bottom-10 left-0 w-full overflow-hidden bg-primary py-3 rotate-[-1deg] z-20">
+<div class="kinetic-marquee flex gap-12 text-on-primary font-headline font-black text-2xl uppercase italic">
+<span>HIIT TRAINING • YOGA FLOW • PILATES STRENGTH • BOOTCAMP • ENERGY PULSE • </span>
+<span>HIIT TRAINING • YOGA FLOW • PILATES STRENGTH • BOOTCAMP • ENERGY PULSE • </span>
+<span>HIIT TRAINING • YOGA FLOW • PILATES STRENGTH • BOOTCAMP • ENERGY PULSE • </span>
+</div>
+</div>
+</section>
+<!-- Concept Section -->
+<section class="relative min-h-screen bg-surface-container-lowest flex flex-col items-center py-24">
+<div class="w-full max-w-7xl px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 relative order-2 md:order-1">
+<div class="aspect-[4/5] md:aspect-[16/9] rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+<img alt="Studio Interior" class="w-full h-full object-cover" data-alt="Ultra modern boutique gym interior with sleek rows of professional treadmills and atmospheric neon lighting accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcJrn1dZmzMMtUhOdxMhoRALhQCKjKVCYOeMn-DYv3zLYzsl8K4YrK-T5asWlkSJ6CpDbo96xZgS6hP8hZ7q89_Om_dvfDRt3EJbmW1iPbcfPhRJowaRlcjFY-hhTLc2HfkSjRzxUCuJko-0mWjjcewWGVyfmbCR_cGgMV0vFFzZ0CW7GwMZik_bAIzIByD2R9FY70PuQNoH4Wwz0O7SusdWWD80SpX58zbd1RobnLy8spsTEtrr_BrRaVY6cEmXtZhVvRRwMFrA"/>
+</div>
+<h2 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-headline font-black text-8xl md:text-[12rem] text-on-background/10 pointer-events-none uppercase tracking-tighter">
+                    CONCEPT
+                </h2>
+</div>
+<div class="md:col-span-5 order-1 md:order-2">
+<h3 class="font-headline font-extrabold text-5xl text-primary mb-8 leading-tight">L'EXPÉRIENCE INPULSE.</h3>
+<div class="space-y-6 text-tertiary text-lg md:text-xl">
+<p class="font-medium">Un club mixte conçu pour transformer votre routine en rituel de performance.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Cours 100% sur tapis de course haut de gamme</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Programmes complets, efficaces et variés</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Encadrement par des coachs d'élite</span>
+</li>
+</ul>
+<div class="pt-8">
+<button class="bg-tertiary text-on-secondary font-black px-10 py-5 rounded-full hover:bg-primary hover:text-on-primary transition-all duration-300 uppercase tracking-tighter text-lg">
+                            DÉCOUVRIR LES COURS
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Studio Features -->
+<section class="grid grid-cols-1 md:grid-cols-2 min-h-[819px]">
+<div class="bg-on-secondary p-12 md:p-24 flex flex-col justify-center">
+<h2 class="font-headline font-black text-5xl text-primary mb-12 uppercase italic leading-none">PLUS QU'UNE SALLE, UN LIEU DE VIE.</h2>
+<ul class="space-y-8">
+<li class="flex items-start gap-6 group">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">shopping_bag</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-tertiary">Un shop exclusif</h4>
+<p class="text-secondary-fixed-dim">T-shirts et gourdes inPulse premium.</p>
+</div>
+</li>
+<li class="flex items-start gap-6 group">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-tertiary">Sécurité maximale</h4>
+<p class="text-secondary-fixed-dim">Des casiers sécurisés pour vos effets personnels.</p>
+</div>
+</li>
+<li class="flex items-start gap-6 group">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">shower</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-tertiary">Espace bien-être</h4>
+<p class="text-secondary-fixed-dim">Cabines pour se changer et salle de bain avec 2 douches.</p>
+</div>
+</li>
+<li class="flex items-start gap-6 group">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">fitness_center</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-tertiary">Plateau Technique</h4>
+<p class="text-secondary-fixed-dim">Une salle lumineuse équipée de 14 tapis dernière génération.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative min-h-[500px]">
+<img alt="Workout action" class="w-full h-full object-cover" data-alt="Close-up of a determined person performing high-intensity training with sweat and dramatic lighting in a dark gym environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANUk11mWPODxEqmgJouNKrfYYqM1X72RgRon89k3tLzm7mjLrT654RuZ-8UsYGm0xY9d2QIxhCw9OnJW7QAw_TeJzOEowy8JQ-JFr2RmR_f_q-74bhs0E_fzw2UaSZTHI5ZCMH_7LPKmLO8XxIvUODkIQzSSpZOF7nR_-MgcabrtC1I1o8dYYEOp9RmPEq-0fZa3zdpYtbElvf1MEogKV0csdxmA0jO7siU3WJlgtMmik4M58Jfig5iV2KjcO_LLZPnnfiClUahQ"/>
+<div class="absolute inset-0 bg-on-secondary/20 mix-blend-multiply"></div>
+</div>
+</section>
+<!-- Founder Section -->
+<section class="bg-tertiary py-24 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+<img alt="Laura Poizot" class="w-full rounded-2xl brutal-shadow relative z-10 grayscale hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait of a confident female fitness founder in athletic wear, bright natural lighting, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrDhvbb8BtzaeY8z4W0cVeT9EO5-7F0upJbf8h4rdUokdedTP1VrMYBpWhWkTuntXw6knS_vUMzcsEsxfKG7AQF4pkVe7uu2Qrcz2FBxgG5h3b3edJKAedIcu8XfCFTzjOVVHhP-wRc5212i5S-_RN24Uwo_piQO68cHu90MTwkmdKxHDAsyVouStyW59_Rp5MXuEMDdMZRe02PTPDg17P7mfFHMdJpPhXOvz_yqwz2hAHSoNZLSN53Wb6n2eveMeRPXPCGfmXxw"/>
+</div>
+<div class="text-on-secondary">
+<span class="inline-block bg-on-secondary text-primary px-4 py-1 rounded-full text-sm font-bold tracking-widest mb-6 uppercase">La Fondatrice</span>
+<h2 class="font-headline font-black text-6xl mb-8 leading-none">LAURA POIZOT</h2>
+<div class="space-y-6 text-xl leading-relaxed font-medium">
+<p>Passionnée par le mouvement et la performance, Laura a imaginé inPulse comme une réponse à l'ennui des salles de sport traditionnelles.</p>
+<p>Son parcours entre le coaching de haut niveau et l'entrepreneuriat a donné naissance à un concept unique à Paris : un club où l'énergie collective sublime l'effort individuel.</p>
+<p>Pour Laura, chaque séance est une opportunité de se redécouvrir, de dépasser ses blocages et de sortir du club avec une clarté mentale absolue.</p>
+</div>
+<div class="mt-12 flex gap-4 items-center">
+<div class="h-[2px] w-12 bg-on-secondary"></div>
+<span class="font-headline font-bold uppercase tracking-widest">Driven by pulse</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="bg-tertiary-container py-32 px-8 border-y-4 border-on-secondary">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline font-black text-5xl md:text-7xl text-on-secondary mb-12 uppercase italic leading-tight">LE NOUVEAU CLUB INCONTOURNABLE DU 17e</h2>
+<div class="flex items-center justify-center gap-4 mb-16">
+<span class="material-symbols-outlined text-4xl text-on-secondary">location_on</span>
+<p class="text-3xl font-headline font-bold text-on-secondary tracking-tighter">22 RUE LECLUSE, PARIS 17</p>
+</div>
+<button class="bg-primary text-on-primary font-black px-12 py-6 rounded-full hover:scale-105 hover:shadow-2xl transition-all duration-300 uppercase tracking-tighter text-2xl shadow-xl">
+                DÉCOUVRIR L'OFFRE DÉCOUVERTE
+            </button>
+</div>
+</section>
+<!-- App Download Section -->
+<section class="bg-secondary-container py-20 px-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[400px]" style="font-variation-settings: 'FILL' 1;">phone_iphone</span>
+</div>
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+<h2 class="font-headline font-black text-5xl md:text-7xl text-tertiary uppercase leading-none italic max-w-xl">
+                RÉSERVE SUR L'APPLICATION
+            </h2>
+<div class="flex flex-wrap gap-6">
+<a class="bg-on-secondary-container hover:bg-white text-on-secondary px-8 py-4 rounded-xl flex items-center gap-4 transition-colors" href="#">
+<span class="material-symbols-outlined text-4xl">ios</span>
+<div class="text-left">
+<p class="text-xs uppercase font-bold opacity-70 leading-none">Download on the</p>
+<p class="text-xl font-bold leading-none">App Store</p>
+</div>
+</a>
+<a class="bg-on-secondary-container hover:bg-white text-on-secondary px-8 py-4 rounded-xl flex items-center gap-4 transition-colors" href="#">
+<span class="material-symbols-outlined text-4xl">play_apps</span>
+<div class="text-left">
+<p class="text-xs uppercase font-bold opacity-70 leading-none">Get it on</p>
+<p class="text-xl font-bold leading-none">Google Play</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Shared Component: Footer -->
+<footer class="bg-stone-950 dark:bg-black w-full py-12 px-8 border-t border-white/10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl mx-auto items-center">
+<div class="text-xl font-bold text-tertiary uppercase tracking-tighter italic">inPulse Club</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-stone-500 hover:text-tertiary transition-all duration-300" href="#">MENTIONS LÉGALES</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-stone-500 hover:text-tertiary transition-all duration-300" href="#">POLITIQUE DE CONFIDENTIALITÉ</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-stone-500 hover:text-tertiary transition-all duration-300" href="#">CGV</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-stone-500 hover:text-tertiary transition-all duration-300" href="#">CONTACT</a>
+</div>
+<div class="text-right text-stone-600 font-['Manrope'] text-xs uppercase tracking-widest">
+                © 2024 INPULSE CLUB. TOUS DROITS RÉSERVÉS.
+            </div>
+</div>
+</footer>
+</body></html>
