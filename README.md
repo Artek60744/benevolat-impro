@@ -1,9 +1,15 @@
-# inPulse Club
+# Lamia Zegrir — Site vitrine
 
-Landing page statique du club HIIT & Fitness **inPulse Club** (Paris 17e).
+Site vitrine statique de **Lamia Zegrir**, consultante freelance en stratégie de
+communication et conduite du changement (Paris · remote & hybride).
 
 Site 100 % statique : une seule page (`index.html`), Tailwind CSS chargé via CDN et polices
 Google Fonts. Aucune étape de build n'est nécessaire.
+
+## Structure de la page
+
+Hero → L'enjeu → Accompagnements (services) → Ma méthode → Réalisations → À propos →
+Repères (preuve sociale) → Contact.
 
 ## Aperçu en local
 
@@ -11,6 +17,12 @@ Google Fonts. Aucune étape de build n'est nécessaire.
 python3 -m http.server 8000
 # puis ouvrir http://localhost:8000
 ```
+
+## À compléter
+
+- **Images** : les 4 visuels sont des placeholders (voir les commentaires `TODO` dans
+  `index.html`). Remplacer notamment celui de la section « À propos » par la photo pro.
+- **Liens** : LinkedIn, mentions légales et politique de confidentialité pointent vers `#`.
 
 ## Déploiement — GitHub Pages
 
